@@ -11,6 +11,9 @@ header {
   margin-bottom: 20px;
   padding: 10px 20px;
 }
+h2 {
+  margin-bottom: 10px;
+}
 .nav-seite {
   display: flex;
 
@@ -31,4 +34,18 @@ header {
 }
 .nav-seite__link:hover {
   background-color: rgb(255, 191, 107);
+}
+.projekte__item {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  border: 1px solid #ccc;
+}
+.projekte__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.projekte__item > a {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
 }
