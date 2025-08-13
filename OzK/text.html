@@ -8,51 +8,92 @@
             .textblock
             {
                 background-color:#f9f9f9; 
-                border-left: 4px solid #007acc;
                 padding: 10px 15px;
                 margin: 15px 0;
                 font-family: Arial, sans-serif;
                 line-height: 1.6;   
             }
+            .textblockA
+            {
+                background-color:#f9f9f9; 
+                padding: 10px 15px;
+                margin: 15px 0;
+                font-family: Arial, sans-serif;
+                line-height: 1.6;     
+            }
+            .Zitat
+            {
+                background-color:#f9f9f9; 
+                padding: 10px 15px;
+                margin: 15px 0;
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+            }
+            .Lieblingsfilme
+            {
+                background-color:#f9f9f9; 
+                padding: 10px 15px;
+                margin: 15px 0;
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+            }
+            .ToDoListe
+            {
+                background-color:#f9f9f9; 
+                padding: 10px 15px;
+                margin: 15px 0;
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+            }
+
     </style>
 </head>
 <body>
-    <h1>Dieser Text soll eine Hauptunterschrift sein</h1>
+    <h1 style="text-align:center;">Dieser Text soll eine Hauptunterschrift sein</h1>
 
-    <h2>Dieser Text soll eine Unterüberschrift sein</h2>
+    <h2 style="text-align:center;">Dieser Text soll eine Unterüberschrift sein</h2>
 
     <div class="textblock">
         Dies ist ein normaler Textabschnitt. So sollte ein Standardtext auf meiner Webseite aussehen.
         Ich möchte, dass dieser Text als zusammengehöriger Block dargestellt wird.
     </div>
 
-    <h3>Aufgaben zur Textformatierung</h3>
-        <ul>
+    <h3 style="text-align:center;">Aufgaben zur Textformatierung</h3>
+        <div class="textblockA">
+            <ul>
             <li><strong>Dieser Text soll fett dargestellt werden.</strong></li>
-            <li><em>Dieser Text soll kursiv dargestellt werden.</Tem></em></li>
+            <li><em>Dieser Text soll kursiv dargestellt werden.</em></li>
             <li><u>Dieser Text soll unterstrichen sein.</u></li>
             <li><strong>DIESER TEXT SOLL BESONDERS HERVOGEHOBEN WERDEN.</strong></li>
             <li><del>Dieser Text soll durchgestrichen sein.</del></li>
         </ul>
 
-        <blockquote>
-            Die Freiheit des Menschen liegt nicht darin, dass er tun kann, was er will, sondern, 
-            dass er nicht tun muss, was er nicht will.
+        </div>
+
+        <blockquote class="Zitat">
+            <strong>
+                Die Freiheit des Menschen liegt nicht darin, dass er tun kann, was er will, sondern, 
+                dass er nicht tun muss, was er nicht will.
+            </strong>
         </blockquote>
 
-        <h3>Liste meiner Lieblingsfilme</h3>
+    <h3 style="text-align:center;">Liste meiner Lieblingsfilme</h3>
+    <div class="Lieblingsfilme">
             <ol>
                 <li>John Wick</li>
                 <li>The Mechanic</li>
                 <li>American Gangster, Training Day</li>
             </ol>
-        
-        <h3>Dinge, die ich Heute erlerdingen möchte</h3>
+    </div>
+    <h3 style="text-align:center;">Dinge, die ich Heute erlerdingen möchte</h3>
+    <div class="ToDoListe">
             <ul>
                 <li>Einkaufen gehen</li>
                 <li>E-mails beantworten</li>
                 <li>Sport machen</li>
             </ul>
+    </div> 
+    
 
 </body>
 </html>
