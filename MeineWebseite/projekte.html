@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meine Projekte – Oguz Keskin</title>
+  <meta name="description" content="Projekte und Arbeiten von Oguz Keskin. Von HTML/CSS-Übungen bis zu zukünftigen IT-Projekten.">
+  <meta name="author" content="Oguz Keskin">
+  <meta name="keywords" content="Projekte, HTML, CSS, IT-Projekte, Oguz Keskin">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Meine Projekte</h1>
+    <nav aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber-mich.html">Über mich</a></li>
+        <li><a href="projekte.html" aria-current="page">Projekte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Aktuelle Lernprojekte</h2>
+    <ol>
+      <li>HTML-Grundlagen: Struktur, Semantik, Meta-Daten</li>
+      <li>CSS-Basics: Layout, Typografie, Responsive Viewport</li>
+      <li>Kleine Komponenten: Navigation &amp; Footer</li>
+    </ol>
+
+    <h2>Geplante Projekte</h2>
+    <ul>
+      <li>Portfolio-Website mit mehreren Seiten</li>
+      <li>Mini-To-Do-App (JavaScript)</li>
+      <li>Notizen-/Lernblog</li>
+      <li>Projektmanagement-Case-Study (E-Bike-Firma)</li>
+      <li>Einfaches Text-Adventure (C#)</li>
+    </ul>
+
+    <h2>Kontakt</h2>
+    <p>Schreiben Sie mir gern: <a href="mailto:oguz.keskin@example.com">oguz.keskin@example.com</a> 
+       · Externe Profile: <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> / 
+       <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="y"></span> Oguz Keskin</small>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
