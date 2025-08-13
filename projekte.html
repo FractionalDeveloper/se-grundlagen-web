@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meine Projekte - Sarah Göhring</title>
+  <meta name="description" content="Projekte und Arbeiten von Sarah Göhring. Von HTML-Übungen bis zu zukünftigen IT-Projekten" />
+  <meta name="author" content="Sarah Göhring" />
+  <meta name="keywords" content="Projekte, HTML, CSS, IT-Projekte, Sarah Göhring" />
+  <style>
+    body { font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; line-height: 1.6; margin: 0; }
+    header, nav, main, footer { max-width: 900px; margin: 0 auto; padding: 1rem; }
+    header { background: #df87ff; }
+    nav a { margin-right: .75rem; }
+    ul, ol { padding-left: 1.25rem; }
+    footer { font-size: .9rem; color: #555; border-top: 1px solid #eee; }
+    code { background: #f0f0f0; padding: .1rem .3rem; border-radius: .25rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meine Projekte</h1>
+    <nav aria-label="Hauptnavigation">
+      <a href="index.html">Startseite</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="projekte.html" aria-current="page">Projekte</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="learn">
+      <h2 id="learn">Aktuelle Lernprojekte</h2>
+      <ol>
+        <li>HTML-Grundlagen: Struktur, Semantik, Formulare</li>
+        <li>CSS-Grundlagen: Box-Modell, Typografie, Layouts</li>
+        <li>Kleine Übung: Mini-Portfolio mit Navigation</li>
+        <li>Barrierefreiheit: sinnvolle Überschriften, Alternativtexte</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="planned">
+      <h2 id="planned">Geplante Projekte</h2>
+      <ul>
+        <li>Text-Adventure in C# (Konsolenanwendung) weiterentwickeln</li>
+        <li>Einfache To-Do-Webapp (HTML/CSS/JS) mit LocalStorage</li>
+        <li>Responsives Portfolio mit mehreren Unterseiten</li>
+        <li>Kleines Datenbank-Projekt mit CRUD-Funktionen</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Kontakt</h2>
+      <p>Falls Sie Fragen und/oder Interesse an einer Zusammenarbeit haben erreichen Sie mich per E-Mail unter:
+         <a href="mailto:sarah-goehring@web.de">sarah-goehring@web.de</a>.
+         Außerdem finden Sie mich auf:
+         <a href="https://www.linkedin.com/in/sarah-g%C3%B6hring-3326b1356/?trk=opento_sprofile_topcard" target="_blank" rel="noopener">LinkedIn</a> & 
+         <a href="https://github.com/SarahNaomiGrace" target="_blank" rel="noopener"> GitHub</a>
+      </p>
+      <p>Ich freue mich ebenso über Nachrichten mit Feedback und konstruktiver Kritik.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Sarah Göhring</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

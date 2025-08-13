@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Willkommen - Sarah Göhring</title>
+  <meta name="description" content="Die persönliche Website von Sarah Göhring. Hier erfahren Sie alles über mich und meine Interessen" />
+  <meta name="author" content="Sarah Göhring" />
+  <meta name="keywords" content="Portfolio, Über mich, Sarah Göhring, Persönliche Website" />
+  <style>
+    body { font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; line-height: 1.6; margin: 0; }
+    header, nav, main, footer { max-width: 900px; margin: 0 auto; padding: 1rem; }
+    header { background: #df87ff; }
+    nav a { margin-right: .75rem; }
+    ul, ol { padding-left: 1.25rem; }
+    footer { font-size: .9rem; color: #555; border-top: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Willkommen auf meiner Website</h1>
+    <nav aria-label="Hauptnavigation">
+      <a href="index.html">Startseite</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="projekte.html">Projekte</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="intro">
+      <p>Hi! Ich bin die <strong>Sarah</strong>, wohne in Erlangen und mache aktuell eine Umschulung zur Fachinformatikerin für Anwendungsentwicklung.</p>
+      <p>Auf dieser Seite gebe ich einen kleinen Einblick in meine Person, meine Lernreise in die IT und in einige Projekte, an denen ich arbeite, oder die ich vor habe umzusetzen.</p>
+      <p>Ich stelle mich und meine Interessen unter <strong>"Über mich"</strong> kurz vor.</p>
+      <p>Unter <strong>"Projekte"</strong> gebe ich einen Einblick in meine bereits abgeschlossenen, noch laufenden und geplanten Projekte.</p>
+    </section>
+
+    <section aria-labelledby="updates">
+      <h2 id="updates">Neueste Updates:</h2>
+      <ul>
+        <li>Start dieser persönlichen Website.</li>
+        <li>Erste HTML/CSS-Übungen abgeschlossen und dokumentiert.</li>
+        <li>Erstes kleines C#-Konsolenprojekt (Text-Adventure) abgeschlossen.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Sarah Göhring</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

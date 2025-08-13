@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Über mich - Sarah Göhring</title>
+  <meta name="description" content="Erfahren Sie mehr über Sarah Göhring: Hintergrund, Ausbildung, Hobbys und persönliche Interessen" />
+  <meta name="author" content="Sarah Göhring" />
+  <meta name="keywords" content="Lebenslauf, Hobbys, Ausbildung, Sarah Göhring" />
+  <style>
+    body { font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; line-height: 1.6; margin: 0; }
+    header, nav, main, footer { max-width: 900px; margin: 0 auto; padding: 1rem; }
+    header { background: #df87ff; }
+    nav a { margin-right: .75rem; }
+    ul, ol { padding-left: 1.25rem; }
+    footer { font-size: .9rem; color: #555; border-top: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Über mich</h1>
+    <nav aria-label="Hauptnavigation">
+      <a href="index.html">Startseite</a>
+      <a href="ueber-mich.html" aria-current="page">Über mich</a>
+      <a href="projekte.html">Projekte</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="bg">
+      <h2 id="bg">Mein Hintergrund</h2>
+      <p>Geboren und aufgewachsen bin ich in Coburg, habe meine mittlere Reife gemacht und eine Ausbildung zur examinierten Altenpflegerin.
+        Ziemlich schnell wollte ich mein erlerntes Wissen an künftige Pflegefachpersonen weitergeben und habe eine Weiterbildung zur Praxisanleiterin (praktischen Ausbilderin) absolviert.
+        Nachdem ich einige Jahre in Nürnberg und im Nürnberger Land gelebt und gearbeitet habe, bin ich 2024 nach Erlangen gezogen. Mit dem Wohnortwechsel und Start meiner Umschulung beginnt für mich ein neuer, spannender Lebensabschnitt.
+        Meine Motivation ist es, mein Verantwortungsbewusstsein, Organisationstalent und meine Kommunikationsstärke in praxisnahe Projekte einzubringen. Durch mein Interesse an Technologie und der Digitalisierung,
+        meine schnelle Auffassungsgabe und Lernbereitschaft, sowie Lösungsorientiertem Denken und Handeln, finde ich mich in der IT-Branche sehr gut zurecht.</p>
+    </section>
+
+    <section aria-labelledby="hobbies">
+      <h2 id="hobbies">Meine Hobbys</h2>
+      <ul>
+        <li>Spaziergänge mit meiner Hündin Mira</li>
+        <li>Natur genießen in meinem kleinen Garten</li>
+        <li>Webentwicklung (HTML, CSS, erste Schritte in JavaScript)</li>
+        <li>Planen und Umsetzen kleiner Konsolenanwendungen in C#</li>
+        <li>Hören von IT-Podcasts</li>
+        <li>Gaming und soziale Kontakte pflegen</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="whyit">
+      <h2 id="whyit">Warum IT?</h2>
+      <p>IT begeistert mich, weil sie kreative Problemlösung mit logischem Denken verbindet. Schon kleine Programme können großen Nutzen stiften – sei es, um Aufgaben zu automatisieren, Informationen
+         übersichtlich und anschaulich darzustellen oder Menschen besser zu vernetzen. Besonders interessiert mich ich die Kombination aus sauberer Software-Architektur und nutzerfreundlichem Design.
+         Mit der Umschulung möchte ich den Grundstein für eine langfristige, erfüllende Laufbahn in der Softwareentwicklung legen.</p>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Sarah Göhring</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
