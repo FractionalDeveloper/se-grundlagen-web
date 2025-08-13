@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Retrospective Summary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Page 1: Insights</h1>
+    <nav>
+        <button onclick="location.href='index.html'">Back to Home</button>
+        <button onclick="location.href='page2.html'">Go to Page 2: Achievements</button>
+        <button onclick="location.href='page3.html'">Go to Page 3: Improvements</button>
+    </nav>
+    <div class="content">
+        <p>Retrospective Summary</p>
+    </div>
+</body>
+</html>
