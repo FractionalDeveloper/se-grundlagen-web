@@ -291,10 +291,66 @@ main a:active  { color:#0A66C2; }
 }
 
 .hover-bild:hover{
-  border-color: #2c3e50;           /* Rahmen wird sichtbar */
+  border-color: #2c3e50;           
   box-shadow: 0 8px 18px rgba(0,0,0,.12);
 }
+/* Slider im weißen Kartenstil */
+.slider{
+  max-width: 900px; margin: 1rem auto; position: relative;
+  background:#fff; border:1px solid rgba(44,62,80,.16);
+  border-radius:16px; box-shadow:0 6px 18px rgba(0,0,0,.08);
+  padding:1rem;
+}
+.slides{ position:relative; overflow:hidden; }
+.slide{ display:none; }
+.slide.aktiv{ display:block; }
+.slide img{ width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; }
+.slide figcaption{ text-align:center; color:#6b7280; margin-top:.5rem; }
 
+/* Pfeile */
+.nav-btn{
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:36px; height:36px; border-radius:50%; border:none; cursor:pointer;
+  background:#2c3e50; color:#fff; box-shadow:0 2px 6px rgba(0,0,0,.15);
+}
+.nav-btn:hover{ filter:brightness(1.1); }
+.prev{ left:12px; } .next{ right:12px; }
+
+/* Punkte */
+.dots{ display:flex; justify-content:center; gap:.5rem; margin-top:.6rem; }
+.dot{ width:10px; height:10px; border-radius:50%; border:none; background:#d1d5db; }
+.dot.aktiv{ background:#2c3e50; }
+
+/* Kompakter Slider in 400×300 */
+.slider--400{
+  max-width: 440px;          /* 400 Bild + etwas Padding/Border */
+  margin: 1rem auto;
+  padding: .75rem;
+}
+
+.slider--400 .slide img{
+  display:block;
+  width: 400px;
+  height: 300px;             /* exakt 4:3 */
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+/* kleinere Pfeile & enger positioniert */
+.slider--400 .nav-btn
+    {
+      width:42;
+      height:42;
+      font-size: 22px;
+      line-height: 1;
+      top: calc(50% + 10px);
+    }
+.slider--400 .prev{ left:1px;}
+.slider--400 .next{ right:1px;}
+
+/* Punkte etwas dichter */
+.slider--400 .dots{ margin-top:.5rem; }
 
 
 

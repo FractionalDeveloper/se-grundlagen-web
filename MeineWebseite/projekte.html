@@ -23,20 +23,29 @@
 
   <main>
     <h2>Aktuelle Lernprojekte</h2>
-      <ul class="projektliste">
-        <li>
-          <img src="bilder/Bild3.jpg" alt="Symbol für HTML-Code" loading="lazy" class="medienbild">
-          <span>HTML-Grundlagen: Struktur, Semantik, Meta-Daten</span>
-        </li>
-        <li>
-          <img src="bilder/Bild4.jpg" alt="Symbol für CSS-Design" loading="lazy" class="medienbild">
-          <span>CSS-Basics: Layout, Typografie, Responsive Viewport</span>
-        </li>
-        <li>
-          <img src="bilder/bild5.jpg" alt="Symbol für Navigation und Footer" loading="lazy" class="medienbild">
-          <span>Kleine Komponenten: Navigation &amp; Footer</span>
-        </li>
-      </ul>
+      <section class="galerie" aria-label="Bilder-Slider">
+        <div class="slider slider--400">
+          <div class="slides">
+            <figure class="slide aktiv">
+              <img src="bilder/Bild3.jpg" alt="HTML-Grundlagen">
+              <figcaption>HTML-Grundlagen: Struktur, Semantik, Meta-Daten</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="bilder/Bild4.jpg" alt="CSS-Basics">
+              <figcaption>CSS-Basics: Layout, Typografie, Responsive Viewport</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="bilder/bild5.jpg" alt="Navigation &amp; Footer">
+              <figcaption>Kleine Komponenten: Navigation &amp; Footer</figcaption>
+            </figure>
+            </div>
+
+          <button class="nav-btn prev" aria-label="Vorheriges Bild">‹</button>
+          <button class="nav-btn next" aria-label="Nächstes Bild">›</button>
+          <div class="dots" aria-label="Bildauswahl"></div>
+        </div>
+      </section>
+
 
     <h2>Geplante Projekte</h2>
       <ul>
@@ -63,5 +72,53 @@
     <small>&copy; <span id="y"></span> Oguz Keskin</small>
     <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
   </footer>
+  <!-- Slider-Skript -->
+  <script>
+      (() => {
+        const slider = document.querySelector('.slider');
+        if (!slider) return; // falls die Seite keinen Slider hat
+
+        const slides = [...slider.querySelectorAll('.slide')];
+        const dotsBox = slider.querySelector('.dots');
+        let i = 0, timer;
+
+        // Punkte dynamisch
+        slides.forEach((_, idx) => {
+          const b = document.createElement('button');
+          b.className = 'dot';
+          b.setAttribute('aria-label', `Bild ${idx + 1}`);
+          b.addEventListener('click', () => show(idx, true));
+          dotsBox.appendChild(b);
+        });
+
+        function show(n, manual=false){
+          slides[i].classList.remove('aktiv');
+          dotsBox.children[i].classList.remove('aktiv');
+          i = (n + slides.length) % slides.length;
+          slides[i].classList.add('aktiv');
+          dotsBox.children[i].classList.add('aktiv');
+          if (manual) restart();
+        }
+        function next(){ show(i + 1); }
+        function prev(){ show(i - 1); }
+        function restart(){ clearInterval(timer); timer = setInterval(next, 3000); }
+
+        // Init
+        slides[0].classList.add('aktiv');
+        dotsBox.children[0].classList.add('aktiv');
+        slider.querySelector('.next').addEventListener('click', next);
+        slider.querySelector('.prev').addEventListener('click', prev);
+
+        slider.addEventListener('mouseenter', () => clearInterval(timer));
+        slider.addEventListener('mouseleave', restart);
+        slider.tabIndex = 0;
+        slider.addEventListener('keydown', e => {
+          if (e.key === 'ArrowRight') next();
+          if (e.key === 'ArrowLeft')  prev();
+        });
+
+        restart();
+        })();
+  </script>
 </body>
 </html>
