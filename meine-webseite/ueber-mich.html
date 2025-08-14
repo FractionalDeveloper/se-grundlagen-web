@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Über mich - Vladislav Oroz</title>
-  <meta name="description" content="Mehr über Vladislav Oroz: Interessen, Erfahrungen und Ziele.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über mich</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Über mich</h1>
     <nav>
       <a href="index.html">Startseite</a>
       <a href="ueber-mich.html" aria-current="page">Über mich</a>
-      <a href="kontakt.html">Kontakt</a>
+      <a href="projekte.html">Projekte</a>
     </nav>
   </header>
 
-  <main>
-    <img src="assets/mein-foto.jpg" alt="Foto von Vladislav Oroz" class="profilfoto">
-    <p>Hallo! Ich bin Vladislav Oroz. Ich interessiere mich für Webentwicklung, Design und neue Technologien.</p>
-    <p>In meiner Freizeit experimentiere ich gerne mit neuen Webtechnologien und erstelle kleine Projekte, um mein Wissen zu erweitern. 
-        Ich liebe es, Probleme durch Programmierung zu lösen und mich mit Gleichgesinnten auszutauschen.</p>
+  <main class="about">
+    <section class="about-card">
+      <img
+        src="bilder/mein-foto.jpg"
+        alt="Foto von Vladislav Oroz"
+        class="profilfoto"
+        loading="lazy"
+      />
+
+      <div class="about-text">
+        <h2>Vladislav Oroz</h2>
+        <p>Hallo! Ich interessiere mich für Webentwicklung, Design und neue Technologien.</p>
+        <p>In meiner Freizeit experimentiere ich mit Webtechnologien und baue kleine Projekte.</p>
+      </div>
+    </section>
   </main>
 </body>
 </html>
