@@ -94,7 +94,7 @@ footer small {
   border: 4px solid #2c3e50;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-/* Einheitliche Bildgestaltung */
+/* Nur Layout für Figure-Bilder */
 figure {
   text-align: center;
   margin: 1.5rem auto;
@@ -119,7 +119,7 @@ figure figcaption {
 .hauptnavigation { font-size: 1.05rem; font-weight: 600; }
 #start-titel { text-transform: uppercase; letter-spacing: .5px; }
 
-/* Einheitliche Bildoptik */
+/* Optik zentral über die Klasse */
 .medienbild { border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
 
 /* Projektliste */
