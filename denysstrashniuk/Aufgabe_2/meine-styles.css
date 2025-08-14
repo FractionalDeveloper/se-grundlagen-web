@@ -98,7 +98,7 @@ p {
   overflow: hidden;
 
   text-align: center;
-  background-color: #ffa3fa;
+  background-color: rgb(163, 206, 235);
 }
 .hero-uebermich__bild {
   transform: translate(-100%, 0);
