@@ -280,6 +280,20 @@ main a:active  { color:#0A66C2; }
 /*Zur Sicherheit */
 .tastenreihe:hover { background: transparent; }
 
+/* A4: Hover-Rahmen mit Innenabstand (Padding) – ohne Layoutsprung */
+.hover-bild{
+  box-sizing: border-box;          /* Border + Padding zählen zur Größe */
+  padding: 10px;                   /* Innenabstand zwischen Bild und Rahmen */
+  background: #fff;                /* macht das Padding sichtbar */
+  border: 3px solid transparent;   /* unsichtbar im Normalzustand */
+  border-radius: 12px;             /* weiche Ecken */
+  transition: border-color .2s, box-shadow .2s, transform .12s;
+}
+
+.hover-bild:hover{
+  border-color: #2c3e50;           /* Rahmen wird sichtbar */
+  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+}
 
 
 
