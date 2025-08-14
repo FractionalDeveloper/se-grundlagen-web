@@ -7,18 +7,14 @@
     <meta name="description" content="Die persönliche Website von Andrei Bezgatsev. Hier erfahren Sie alles über mich und meine Interessen">
     <meta name="author" content="Andrei Bezgatsev">
     <meta name="keywords" content="Portfolio, Über mich, Andrei Bezgatsev, Persönliche Website">
-    <style>
-        #image {
-            padding-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="meine-styles.css">
 </head>
 <body>
     <main>
         <section>
-            <h1>Willkommen auf meiner Website</h1>
+            <h1 id="wellcome_msg">Willkommen auf meiner Website</h1>
         </section>
-        <section>
+        <section class="hauptnavigation">
             <h4>Navigation</h4>
             <a href="ueber-mich.html">
                 <button>Über mich</button>
@@ -28,19 +24,18 @@
             </a>
             <br>
         </section>
-        <section id="image">
+        <section id="main_img">
             <img src="bilder/black-and-white.jpg" 
                 alt="Schwarz-Weiß-Foto eines Mannes, der auf einem Bahnsteig steht" 
                 title="B/W Person">
         </section>    
         <section>
-            <p>
+            <p class="highlight">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
                 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                sed diam voluptua.
             </p>
-            <p>
+            <p class="highlight">
                 Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
                 vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio 
                 dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.

@@ -1,0 +1,37 @@
+* {
+    font-family: Verdana;
+}
+h1 {
+    font-family: Georgia;
+}
+h2 {
+    font-family: Courier;
+}
+p {
+    font-size: large;
+    line-height: 24px;
+}
+h1, h2 {
+    color: darkblue;
+}
+img {
+    border: 3px solid coral;
+    border-radius: 8px;
+}
+.hauptnavigation {
+    color: brown;
+    font-size: 20px;
+}
+.highlight {
+    font-style: italic;
+    color: indigo;
+}
+#wellcome_msg {
+    color: royalblue;
+    font-size: xx-large;
+    font-family: Cambria;
+    font-weight: bold;
+}
+#main_img {
+    padding-top: 10px;
+}
