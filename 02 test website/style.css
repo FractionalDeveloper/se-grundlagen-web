@@ -1,0 +1,5 @@
+body{text-align: center; background-color:black; color:lightgray;}
+a:link {color: greenyellow}
+a:visited {color: red;}
+a:hover  {color: orange;}
+a:active {color: white;}
