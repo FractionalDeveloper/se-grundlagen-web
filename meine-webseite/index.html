@@ -12,28 +12,33 @@
       <a href="index.html" aria-current="page">Startseite</a>
       <a href="ueber-mich.html">Über mich</a>
       <a href="projekte.html">Projekte</a>
+      <a href="box-model.html">Box-Model</a>
     </nav>
-    
   </header>
 
   <main>
     <h1 id="start-titel">Willkommen</h1>
     <p>Dies ist die Startseite meiner kleinen Website.</p>
 
-    <p>Hier ist eine <span class="highlight">wichtige Mitteilung</span> für Besucher.</p>
     <p class="note">* Hinweis: Diese Seite wird noch bearbeitet.</p>
     <p class="wichtig">Achtung: Anmeldung schließt am Freitag!</p>
 
-    <div class="card">
+    <section class="card" style="margin-top:1rem;">
       <h2>Über diese Seite</h2>
-      <p>Dies ist eine Beispiel-Karte, die den <code>.card</code>-Stil verwendet.</p>
-    </div>
+      <p>
+        Dies ist eine Beispiel-Karte, die den <code>.card</code>-Stil verwendet.
+        Hier ist eine <span class="highlight">wichtige Mitteilung</span> für Besucher.
+      </p>
 
-    
-    <img src="bilder/startseite.jpg"
-     alt="Startseitenbild"
-     title="Foto der Startseite"
-     width="400" height="300" loading="lazy" />
+      <!-- Bild 400×300 im /bilder Ordner -->
+      <img
+        src="bilder/startseite.jpg"
+        alt="Startseitenbild"
+        title="Startseitenbild"
+        width="400" height="300"
+        loading="lazy"
+      />
+    </section>
   </main>
 </body>
 </html>

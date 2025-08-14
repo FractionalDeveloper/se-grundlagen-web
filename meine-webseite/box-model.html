@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Box-Model Übung – Vladislav Oroz</title>
+  <meta name="description" content="Übungsseite zum CSS Box-Model mit Bildern und Zitaten" />
+  <link rel="stylesheet" href="meine-styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="hauptnav">
+      <a href="index.html">Startseite</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="box-model.html" aria-current="page">Box-Model</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Box-Model Übung</h1>
+
+    <h2>Mein Lieblingsbild</h2>
+    
+    <img src="bilder/startseite.jpg"
+         alt="Mein Lieblingsbild"
+         class="hover-bild"
+         width="400" height="300"
+         loading="lazy" />
+
+    <h2>Inspirierendes Zitat</h2>
+    <blockquote class="zitat">
+        Es ist nicht wichtig, wie groß der erste Schritt ist – Hauptsache, er geht in die richtige Richtung
+    </blockquote>
+
+    <p class="note">
+      Das CSS Box-Model besteht aus <span class="highlight">content, padding, border und margin</span>.
+      Mit Hover-Effekten kannst du z.&nbsp;B. Rahmen sichtbar machen, ohne dass das Bild springt.
+    </p>
+  </main>
+</body>
+</html>
