@@ -4,8 +4,9 @@
 
 h1 {
     font-family: Georgia;
-	font-size: 32px;
+    font-size: 32px;
 }
+
 h2 {
     font-family: Tahoma;
 }
@@ -14,13 +15,17 @@ p {
     font-family: Tahoma;
     font-size: 24px;
     line-height: 1.7;
-
 }
+
 nav a:link {
-    color: puple;  
+    color: purple;
 }
 nav a:visited {
     color: green;
+}
+
+blockquote {
+    text-align:center;
 }
 
 blockquote::before {
@@ -29,6 +34,7 @@ blockquote::before {
     color: #888;
     margin-right: 0.3em;
 }
+
 blockquote::after {
     content: "❝";
     font-size: 2em;
@@ -42,4 +48,3 @@ blockquote:hover::after {
     color: red;
     font-size: 4em;
 }
-blockquote:text- align: center
