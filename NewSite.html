@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie-Projekt mit Box-Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f0f8ff, #e6e6fa);
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #060928;
+            transition: color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        h1:hover {
+            color: #e21010;
+        }
+
+        .bild {
+            width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: border 0.3s ease, transform 0.3s ease;
+        }
+
+        .bild:hover {
+            border: 3px solid #e21010;
+            transform: scale(1.05);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #e21010;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, font-size 0.3s ease;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ed0c0c;
+            font-size: 1.1em;
+        }
+
+        .seite {
+            display: none;
+        }
+
+        .sichtbar {
+            display: block;
+        }
+
+        .zitat {
+            font-family: 'Georgia', serif;
+            font-size: 1.5em;
+            font-style: italic;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+            color: #333;
+            border-left: 5px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .zitat::before {
+            content: "“";
+            font-size: 3em;
+            color: #888;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .zitat::after {
+            content: "”";
+            font-size: 3em;
+            color: #888;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .zitat:hover::before,
+        .zitat:hover::after {
+            color: orange;
+        }
+
+        /* Box-Model Video mit Padding und Hover-Rahmen */
+        .hover-bild {
+            padding: 15px;
+            border: 5px solid transparent;
+            transition: border-color 0.3s ease;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .hover-bild:hover {
+            border-color: #0077cc;
+        }
+
+        /* Neues Blockquote mit Anführungszeichen */
+        .zitat-box {
+            font-family: 'Georgia', serif;
+            font-size: 1.4em;
+            font-style: italic;
+            background-color: #eef;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+            color: #333;
+            border-left: 5px solid #0077cc;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .zitat-box::before {
+            content: "„";
+            font-size: 2em;
+            color: #0077cc;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .zitat-box::after {
+            content: "“";
+            font-size: 2em;
+            color: #0077cc;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .zitat-box:hover::before,
+        .zitat-box:hover::after {
+            color: orange;
+        }
+    </style>
+    <script>
+        function zeigeSeite(seiteId) {
+            document.getElementById("seite1").classList.remove("sichtbar");
+            document.getElementById("seite2").classList.remove("sichtbar");
+            document.getElementById("seite3").classList.remove("sichtbar");
+            document.getElementById(seiteId).classList.add("sichtbar");
+        }
+
+        window.onload = function() {
+            zeigeSeite("seite1");
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Seite 1 -->
+    <div id="seite1" class="seite">
+        <h1>Willkommen in meiner Galerie</h1>
+        <img src="pexels-chanwalrus-941864.jpg" alt="Box-Modell Diagramm"ier findest du eine Auswahl meiner Lieblingsbilder.</p>
+        <blockquote class="zitat">
+            „Code ist wie Humor. Wenn du ihn erklären musst, ist er schlecht.“ – John Desmond
+        </blockquote>
+        <button class="button" onclick="zeigeSeite('seite2')">Zur Galerie</button>
+        <button class="button" onclick="zeigeSeite('seite3')">Zur Box-Model Übung</button>
+    </div>
+
+    <!-- Seite 2 -->
+    <div id="seite2" class="seite">
+        <h1>Meine Lieblingsbilder</h1>
+        <img src="schoene-naturlandschaft_23-2151922784.jpg" alt="Lieblingsbild 1" class="bild">
+        <img src="C:\Users\RichterPatrick\source\repos\se-grundlagen-web\WIN_20250710_14_41_19_Pro.jpg" alt="Lieblingsbild 2" class="bild">
+        <button class="button" onclick="zeigeSeite('seite1')">Zurück zur Startseite</button>
+        <button class="button" onclick="zeigeSeite('seite3')">Zur Box-Model Übung</button>
+    </div>
+
+    <!-- Seite 3: Box-Model Übung -->
+    <div id="seite3" class="seite">
+        <h1>Box-Model Übung</h1>
+        <h2>Mein Lieblingsvideo</h2>
+        <video class="hover-bild" controls width="400" poster="https://via.placeholder.com/400x225?text=Vorschau">
+            <source src="dein-video.mp4" type="video/mp4">
+            
+        </video>
+
+        <h2>Inspirierendes Zitat</h2>
+        <blockquote class="zitat-box">
+            Erwarte immer das Unerwartete und du wirst niemals überrascht!
+        </blockquote>
+
+            <button class="button" onclick="zeigeSeite('seite1')">Zurück zur Startseite</button>
+    </div>
+
+</body>
+</html>
+            
+        
+
+    
