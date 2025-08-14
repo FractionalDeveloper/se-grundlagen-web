@@ -56,4 +56,25 @@ blockquote:hover::after {
 
 .hover-bild:hover {
     border-color: #e00;
+
+.flex-nav {
+  display: flex;
+  justify-content: center;   /* horizontal zentriert */
+  align-items: center;       /* vertikal zentriert */
+  gap: 2rem;                 /* Abstand zwischen Links */
+}
+
+.flex-nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+
+/* Hover-Farbe/Transition */
+.flex-nav a:hover {
+  background: #333;
+  color: #fff;
+}
 }
