@@ -55,9 +55,6 @@ nav a[aria-current="page"]:hover {
   background: #fff;
   color: #2c3e50;
 }
- 
-
-
 /* Hauptinhalt */
 main {
   max-width: 900px;
@@ -157,6 +154,31 @@ figure figcaption {
 @media (max-width: 520px) {
   .projektliste li { flex-direction: column; align-items: flex-start; }
 }
+/* Buttons wie aktiver Tab: weiß + dunkler Text */
+.taste {
+  background: #fff;
+  color: #2c3e50;
+  border: 1px solid rgba(44,62,80,.25);
+  border-radius: 8px;
+  padding: .45rem .9rem;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0,0,0,.15);
+  transition: background .2s, color .2s, border-color .2s, transform .15s;
+}
+
+.taste:hover { transform: translateY(-1px); }
+
+/* Hover: Markenfarben */
+.taste-github:hover   { background: #24292e; color: #fff; border-color: #24292e; }
+.taste-linkedin:hover { background: #0A66C2; color: #fff; border-color: #0A66C2; }
+
+/* Fokus (Tastatur) */
+.taste:focus-visible {
+  outline: 2px solid #2c3e50;
+  outline-offset: 2px;
+}
+
 
 
 
