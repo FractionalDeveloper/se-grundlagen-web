@@ -1,13 +1,21 @@
-* {font-family: 'Courier New', Courier, monospace; text-align: center; background-color:black; color:lightgray;}
+* {font-family: 'Courier New', Courier, monospace; text-align: center; color:lightgray;}
 h1 {font-size:xx-large; letter-spacing: 3px;}
 h2 {letter-spacing: 3px;}
 
+body {background-image: url("Bilder/wallpaper2.jpg");
+background-position: center repeat-y;}
+
 .navi {font-size: smaller; letter-spacing: 3px;}
 .highlight {font-style: italic; letter-spacing: 3px; font-weight: bold; border: 5px solid greenyellow;}
-.bild {border: 5px solid greenyellow; box-shadow: 5px 5px 10px green}
-.wichtigerbutton {font-size: larger; background-color: greenyellow; color: black; font-weight: bolder; padding: 10px 20px; border-radius: 5px; cursor: pointer}
+.bild {border: 5px solid greenyellow; box-shadow: 5px 5px 10px black}
+.wichtigerbutton {font-size: larger; background-color: greenyellow; color: black; font-weight: bolder; padding: 10px 20px; border-radius: 5px; cursor: pointer; box-shadow: 5px 5px 10px black;}
 
 a:link {color: green}
 a:visited {color: green;}
 a:hover  {color: greenyellow;}
 a:active {color: white;}
+
+#meinZitat {font-style: italic;}
+#meinZitat::before {content: "''"; font-size: larger;}
+#meinZitat::after {content: "''"; font-size: larger;}
+#meinZitat:hover {color: greenyellow;}
