@@ -178,6 +178,101 @@ figure figcaption {
   outline: 2px solid #2c3e50;
   outline-offset: 2px;
 }
+/* Blockquote: Karte + Anführungszeichen */
+.zitat{
+  position: relative;
+  max-width: 720px;
+  margin: 1.5rem auto;
+  padding: 1.2rem 1.4rem;
+  background: #fff;
+  border: 1px solid rgba(44,62,80,.16);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #333;
+}
+.zitat cite{
+  display:block;
+  margin-top:.6rem;
+  font-size:.95rem;
+  color:#6b7280;
+  font-style: normal;
+}
+
+/* Anführungszeichen mit Pseudo-Elementen */
+.zitat::before,
+.zitat::after{
+  content: "„";
+  position:absolute;
+  top:-16px;
+  width:38px; height:38px;
+  border-radius:50%;
+  background:#2c3e50;  /* Grundfarbe */
+  color:#fff;
+  display:grid; place-items:center;
+  font-size:20px;
+  box-shadow:0 2px 6px rgba(0,0,0,.15);
+  transition: transform .2s, background .2s, color .2s;
+}
+.zitat::before{ left:-18px; content:"„"; }
+.zitat::after { right:-18px; content:"“"; }
+
+/* Hover-Effekt für Anführungszeichen */
+.zitat:hover::before,
+.zitat:hover::after{
+  background:#3498db;
+  transform: scale(1.08) rotate(3deg);
+}
+/* Link unsichtbar halten, nur der Zitat-Block reagiert */
+.zitat-link{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+}
+main a.zitat-link:link,
+main a.zitat-link:visited{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* Zitat-Link NICHT einfärben wie normale Links */
+main a.zitat-link:link,
+main a.zitat-link:visited,
+main a.zitat-link:hover,
+main a.zitat-link:active{
+  background: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Exakter Fokus/Hover-Ring an der Karte (mit Rundung) */
+.zitat-link:hover .zitat,
+.zitat-link:focus-visible .zitat{
+  box-shadow: 0 0 0 3px rgba(44,62,80,.45), 0 6px 18px rgba(0,0,0,.08);
+  outline: 0;
+  /* border-radius kommt von .zitat */
+}
+
+
+/* Aufgabe 5: weitere Hover-Effekte (einfach & sichtbar) */
+h2:hover{ color:#3498db; }
+main p:hover{
+  background:#fffbea;
+  border-radius:6px;
+}
+figure img:hover, .projektliste li img:hover{
+  box-shadow:0 8px 22px rgba(0,0,0,.18);
+}
+
+/* Aufgabe 6: Link-Zustände nur im Content (Nav bleibt unverändert) */
+main a{ transition: color .2s, background-color .2s; }
+main a:link    { color:#0b0f13; text-decoration: underline; }
+main a:visited { color:#000000; }
+main p a:hover,
+main li a:hover { color:#0A66C2; background:#eef5ff; }
+main a:active  { color:#0A66C2; }
 
 
 
