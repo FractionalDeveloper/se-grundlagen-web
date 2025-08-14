@@ -20,6 +20,7 @@ h1 {
 h2 {
   margin-bottom: 10px;
 
+  text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", sans-serif;
 }
 p {
@@ -77,8 +78,6 @@ p {
 }
 .updates__ueberschrift {
   margin-bottom: 20px;
-
-  text-align: center;
 }
 .updates-liste {
   display: flex;
@@ -94,6 +93,50 @@ p {
 .updates-liste__item > span {
   text-decoration: underline;
   color: #ff4343;
+}
+.hero-uebermich {
+  overflow: hidden;
+
+  text-align: center;
+  background-color: #ffa3fa;
+}
+.hero-uebermich__bild {
+  transform: translate(-100%, 0);
+  animation: hero-uebermich-bild 4000ms cubic-bezier(0.445, 0.05, 0.55, 0.95)
+    infinite both;
+}
+@keyframes hero-uebermich-bild {
+  0% {
+    transform: translate(-100%, 0);
+  }
+
+  100% {
+    transform: translate(700%, 0);
+  }
+}
+.hintergrund__beschreibung {
+  width: 50%;
+  margin: 0 auto;
+}
+.hobbys-liste {
+  width: 400px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.hobbys-liste__item:nth-child(even) {
+  margin-left: 40px;
+}
+.hobbys-liste__item:not(last-child) {
+  margin-bottom: 10px;
+}
+.antwort__beschreibung {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px 30px;
+
+  text-align: center;
+  border: 1px solid #ccc;
 }
 .projekte__item {
   display: flex;
