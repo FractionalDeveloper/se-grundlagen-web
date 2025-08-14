@@ -258,7 +258,7 @@ main a.zitat-link:active{
 
 /* Aufgabe 5: weitere Hover-Effekte (einfach & sichtbar) */
 h2:hover{ color:#3498db; }
-main p:hover{
+main p:not(.tastenreihe):hover{
   background:#fffbea;
   border-radius:6px;
 }
@@ -270,10 +270,15 @@ figure img:hover, .projektliste li img:hover{
 main a{ transition: color .2s, background-color .2s; }
 main a:link    { color:#0b0f13; text-decoration: underline; }
 main a:visited { color:#000000; }
-main p a:hover,
-main li a:hover { color:#0A66C2; background:#eef5ff; }
+main p a:not(.taste):hover,
+main li a:not(.taste):hover {
+  color: #0A66C2;
+  background: #eef5ff;
+}
 main a:active  { color:#0A66C2; }
 
+/*Zur Sicherheit */
+.tastenreihe:hover { background: transparent; }
 
 
 
