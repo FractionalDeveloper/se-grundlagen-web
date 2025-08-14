@@ -48,3 +48,13 @@ blockquote:hover::after {
     color: red;
     font-size: 4em;
 }
+
+.hover-bild {
+    padding: 20px;
+    border: 3px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.hover-bild:hover {
+    border-color: #e00;
+}
