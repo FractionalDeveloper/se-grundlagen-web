@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie-Projekt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f0f8ff, #e6e6fa);
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #060928;
+        }
+
+        .bild {
+            width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #e21010;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ed0c0c;
+        }
+
+        .seite {
+            display: none;
+        }
+
+        .sichtbar {
+            display: block;
+        }
+    </style>
+    <script>
+        function zeigeSeite(seiteId) {
+            document.getElementById("seite1").classList.remove("sichtbar");
+            document.getElementById("seite2").classList.remove("sichtbar");
+            document.getElementById(seiteId).classList.add("sichtbar");
+        }
+
+        window.onload = function() {
+            zeigeSeite("seite1");
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Seite 1 -->
+    <div id="seite1" class="seite">
+        <h1>Willkommen in meiner Galerie</h1>
+        <img src="pexels-chanwalrus-941864.jpg" alt="Galeriebild" class="bild">
+        <p>Schön, dass du da bist! Hier findest du eine Auswahl meiner Lieblingsbilder.</p>
+        <button class="button" onclick="zeigeSeite('seite2')">Zur Galerie</button>
+    </div>
+
+    <!-- Seite 2 -->
+    <div id="seite2" class="seite">
+        <h1>Meine Lieblingsbilder</h1>
+        <img src="schoene-naturlandschaft_23-2151922784.jpg" alt="Lieblingsbild 1" class="bild">
+        <img src="WIN_20250227_08_08_46_Pro.jpg" alt="Lieblingsbild 2" class="bild">
+        <button class="button" onclick="zeigeSeite('seite1')">Zurück zur Startseite</button>
+    </div>
+
+</body>
+</html>
