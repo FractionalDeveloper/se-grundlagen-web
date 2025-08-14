@@ -111,6 +111,8 @@ p {
   color: #a7a7a7;
   font-size: 30px;
   font-weight: 700;
+
+  transition: color 250ms linear;
 }
 .zitat:hover::before,
 .zitat:hover::after {
