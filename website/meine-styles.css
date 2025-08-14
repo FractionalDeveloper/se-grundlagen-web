@@ -11,12 +11,22 @@ p {
     font-size: large;
     line-height: 24px;
 }
+p:hover {
+    background-color: powderblue;
+}
 h1, h2 {
     color: darkblue;
+}
+h1:hover, h2:hover {
+    color: yellowgreen;
 }
 img {
     border: 3px solid coral;
     border-radius: 8px;
+}
+img:hover {
+    border-color: firebrick;
+    border-style: dashed;
 }
 .hauptnavigation {
     color: brown;
@@ -34,4 +44,43 @@ img {
 }
 #main_img {
     padding-top: 10px;
+}
+li:hover {
+    font-size: larger;
+    color: orangered;
+}
+blockquote::before {
+    content: "„";
+    font-size: x-large;
+    color: gray;
+}
+blockquote::after {
+    content: "“";
+    font-size: x-large;
+    color: gray;
+}
+blockquote:hover::before, blockquote:hover::after {
+    color: orangered;
+}
+blockquote {
+    font-family: 'Trebuchet MS';
+    font-size: x-large;
+    font-style: italic;
+    background-color: aquamarine;
+    text-align: center;
+    color: darkviolet;
+}
+button
+{
+    border: 3px solid coral;
+    transition-duration: 0.4s;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 15px 32px;
+    cursor: pointer;
+}
+button:hover
+{
+    background-color: coral;
+    color: white;
 }
