@@ -22,19 +22,24 @@ nav a:link {
 nav a:visited {
     color: green;
 }
-p:hover {
-    background-color: yellow}
 
 blockquote::before {
-    content: "„";
+    content: "❞";
     font-size: 2em;
     color: #888;
     margin-right: 0.3em;
 }
-
 blockquote::after {
-    content: "“";
+    content: "❝";
     font-size: 2em;
     color: #888;
     margin-left: 0.3em;
+    vertical-align: bottom;
 }
+
+blockquote:hover::before,
+blockquote:hover::after {
+    color: red;
+    font-size: 4em;
+}
+blockquote:text- align: center
