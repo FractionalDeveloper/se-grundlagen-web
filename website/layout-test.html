@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Test - Grid vs Flexbox</title>
+    <meta name="description" content="Vergleich von CSS Grid und Flexbox Layout-Techniken">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <!-- Flexbox Navigation -->
+    <nav class="flex-nav">
+        <a href="index.html">Start</a>
+        <a href="ueber-mich.html">Über mich</a>
+        <a href="projekte.html">Projekte</a>
+        <a href="box-model.html">Box-Model</a>
+        <a href="layout-test.html">Layout Test</a>
+    </nav>
+
+    <!-- Grid Layout für die ganze Seite -->
+    <div class="grid-layout">
+        <header class="header">
+            <h1>Meine Layout-Experimente</h1>
+        </header>
+        <aside class="sidebar">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="ueber-mich.html">Über mich</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a href="box-model.html">Box-Model</a></li>
+                <li><a href="layout-test.html">Layout Test</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>Grid vs. Flexbox Vergleich</h2>
+            <p>
+                Beim Arbeiten mit CSS habe ich sowohl Grid als auch Flexbox ausprobiert 
+                und festgestellt, dass beide Techniken ihre eigenen Stärken haben. 
+                Flexbox eignet sich hervorragend für einzeilige Layouts oder wenn 
+                Elemente dynamisch nebeneinander angeordnet werden sollen, 
+                zum Beispiel bei Navigationsleisten oder kleinen Fotogalerien. 
+                Grid hingegen bietet mir mehr Kontrolle bei komplexeren, zweidimensionalen Layouts. 
+                Besonders beim Erstellen von Bildgalerien mit mehreren Reihen und 
+                Spalten hat sich Grid als übersichtlicher und leistungsfähiger erwiesen.
+            </p>
+            <img src="./bilder/waterscape.jpg" alt="Waterscape" title="Waterscape">
+        </main>
+        <footer class="footer">
+            <p>Copyright &#169; Andrei Bezgatsev</p>
+        </footer>
+    </div>
+
+    <!-- Flexbox Karten -->
+    <section class="flex-karten">
+        <div class="karte">
+            <p>
+                Dies ist ein Beispiel für Text, der in eine Karte in Flexbox eingegeben wird.
+            </p>
+        </div>
+        <div class="karte">
+            <p>Beispiel für eine Liste</p>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="ueber-mich.html">Über mich</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a href="box-model.html">Box-Model</a></li>
+                <li><a href="layout-test.html">Layout Test</a></li>
+            </ul>
+        </div>
+        <div class="karte">
+            <img src="./bilder/traveler.jpg" 
+            alt="Ein Wanderer in den Bergen" 
+            title="Beispielbild in Flexbox" 
+            height="200" 
+            width="200">
+        </div>
+    </section>
+
+</body>
+</html>

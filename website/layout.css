@@ -1,0 +1,40 @@
+.flex-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2%;
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: 200px, 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+}
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.content {
+    grid-area: content;
+    margin-left: 20px;
+}
+.footer {
+    grid-area: footer;
+}
+.flex-karten {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.karte {
+    height: 200px;
+    width: 200px;
+    background-color: coral;
+    border: 5px solid firebrick;
+    border-radius: 5px;
+}
