@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Über mich</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="meine-styles.css" />
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="hauptnav">
       <a href="index.html">Startseite</a>
       <a href="ueber-mich.html" aria-current="page">Über mich</a>
       <a href="projekte.html">Projekte</a>
@@ -16,18 +16,17 @@
   </header>
 
   <main class="about">
-    <section class="about-card">
-      <img
-        src="bilder/mein-foto.jpg"
-        alt="Foto von Vladislav Oroz"
-        class="profilfoto"
-        loading="lazy"
-      />
+    <section class="about-card card">
+      <img src="bilder/mein-foto.jpg"
+     alt="Foto von Vladislav Oroz"
+     title="Profilfoto – Vladislav Oroz"
+     class="profilfoto" loading="lazy" />
 
       <div class="about-text">
         <h2>Vladislav Oroz</h2>
-        <p>Hallo! Ich interessiere mich für Webentwicklung, Design und neue Technologien.</p>
-        <p>In meiner Freizeit experimentiere ich mit Webtechnologien und baue kleine Projekte.</p>
+        <p>Hallo! Ich interessiere mich für <span class="highlight">Webentwicklung</span>, Design und neue Technologien.</p>
+        <p>In meiner Freizeit experimentiere ich mit <span class="wichtig">Webtechnologien</span> und baue kleine Projekte.</p>
+        <p class="note">* Fun Fact: Ich lerne auch gerne neue Programmiersprachen.</p>
       </div>
     </section>
   </main>

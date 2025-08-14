@@ -4,23 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Startseite</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="meine-styles.css" />
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="hauptnav">
       <a href="index.html" aria-current="page">Startseite</a>
       <a href="ueber-mich.html">Über mich</a>
       <a href="projekte.html">Projekte</a>
     </nav>
+    
   </header>
 
   <main>
-    <h1>Willkommen</h1>
+    <h1 id="start-titel">Willkommen</h1>
     <p>Dies ist die Startseite meiner kleinen Website.</p>
 
-    <!-- slika 400×300 (može i druga, samo je u bilder/) -->
-    <img src="bilder/startseite.jpg" alt="Startseitenbild" width="400" height="300" loading="lazy" />
+    <p>Hier ist eine <span class="highlight">wichtige Mitteilung</span> für Besucher.</p>
+    <p class="note">* Hinweis: Diese Seite wird noch bearbeitet.</p>
+    <p class="wichtig">Achtung: Anmeldung schließt am Freitag!</p>
+
+    <div class="card">
+      <h2>Über diese Seite</h2>
+      <p>Dies ist eine Beispiel-Karte, die den <code>.card</code>-Stil verwendet.</p>
+    </div>
+
+    
+    <img src="bilder/startseite.jpg"
+     alt="Startseitenbild"
+     title="Foto der Startseite"
+     width="400" height="300" loading="lazy" />
   </main>
 </body>
 </html>
