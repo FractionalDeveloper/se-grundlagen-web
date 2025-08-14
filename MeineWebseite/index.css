@@ -40,10 +40,23 @@ nav a {
   transition: background 0.3s;
 }
 
-nav a:hover,
+/* Hover-Farbe (nur beim Überfahren) */
+nav a:hover { background: #c1c3c4; color: #fff; }
+
+/* Aktive Seite: weißer Button, Text in Header-Farbe */
 nav a[aria-current="page"] {
-  background: #3498db;
+  background: #fff;
+  color: #2c3e50;
+  box-shadow: 0 1px 3px rgba(0,0,0,.15);
 }
+
+/* Hover der aktiven Seite unverändert lassen */
+nav a[aria-current="page"]:hover {
+  background: #fff;
+  color: #2c3e50;
+}
+ 
+
 
 /* Hauptinhalt */
 main {
