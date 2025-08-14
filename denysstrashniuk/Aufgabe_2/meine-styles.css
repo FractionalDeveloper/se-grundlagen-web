@@ -249,3 +249,73 @@ p {
 .sozialnetzwerke-liste__link:visited {
   color: #3c8b32;
 }
+.hero-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.hero-box__ueberschrift {
+  position: relative;
+
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero-box__ueberschrift::before,
+.hero-box__ueberschrift::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background-color: #b80000;
+
+  transform-origin: center center;
+  transform: rotateY(0deg);
+}
+.hero-box__ueberschrift::before {
+  position: absolute;
+  top: 5px;
+  left: -10px;
+
+  animation: box-bewegung 3000ms linear infinite;
+}
+.hero-box__ueberschrift::after {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+
+  animation: box-bewegung 4000ms linear infinite;
+}
+
+@keyframes box-bewegung {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+.lieblingsbild__ueberschrift {
+  margin-bottom: 20px;
+}
+.lieblingsbild__bild {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+
+  cursor: pointer;
+
+  transition: outline 500ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.lieblingsbild__bild:hover {
+  outline: 2px double #295a7a;
+}
+.zitat-box {
+  width: 500px;
+  margin: 0 auto;
+
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  text-align: center;
+  border-left: 2px solid #b80000;
+}
