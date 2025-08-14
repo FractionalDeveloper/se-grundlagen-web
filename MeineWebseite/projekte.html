@@ -106,8 +106,10 @@
         // Init
         slides[0].classList.add('aktiv');
         dotsBox.children[0].classList.add('aktiv');
-        slider.querySelector('.next').addEventListener('click', next);
-        slider.querySelector('.prev').addEventListener('click', prev);
+        const nextBtn = slider.querySelector('.next');
+        const prevBtn = slider.querySelector('.prev');
+        if (nextBtn) nextBtn.addEventListener('click', next);
+        if (prevBtn) prevBtn.addEventListener('click', prev);
 
         slider.addEventListener('mouseenter', () => clearInterval(timer));
         slider.addEventListener('mouseleave', restart);

@@ -318,7 +318,14 @@ main a:active  { color:#0A66C2; }
 
 /* Punkte */
 .dots{ display:flex; justify-content:center; gap:.5rem; margin-top:.6rem; }
-.dot{ width:10px; height:10px; border-radius:50%; border:none; background:#d1d5db; }
+.dot{
+   width:10px;
+   height:10px;
+   border-radius:50%;
+   border:none;
+   background: rgba(44,62,80,.35);; 
+   cursor: pointer;
+  }
 .dot.aktiv{ background:#2c3e50; }
 
 /* Kompakter Slider in 400×300 */
@@ -337,17 +344,9 @@ main a:active  { color:#0A66C2; }
   margin: 0 auto;
 }
 
-/* Pfeile & positioniert */
-.slider--400 .nav-btn
-    {
-      width:42;
-      height:42;
-      font-size: 22px;
-      line-height: 1;
-      top: calc(50% + 10px);
-    }
-.slider--400 .prev{ left:1px;}
-.slider--400 .next{ right:1px;}
+.slider--400 .nav-btn { 
+  display: none !important; 
+}
 
 /* Punkte etwas dichter */
 .slider--400 .dots{ margin-top:.5rem; }
