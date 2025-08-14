@@ -16,6 +16,16 @@ h1 {
 
 }
 
+blockquote {
+
+    font-style: italic;
+    background-color: aqua;
+    text-align: center;  
+
+
+
+}
+
 h2 {
 
     font-family: Verdana, Geneva, sans-serif;
