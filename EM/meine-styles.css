@@ -77,4 +77,39 @@ blockquote:hover::after {
   background: #333;
   color: #fff;
 }
+.grid-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  gap: 20px;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background: #eaeaea;
+  padding: 1rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #d7e5fa;
+  padding: 1rem;
+  width: 200px;
+}
+
+.content {
+  grid-area: content;
+  background: #fff;
+  padding: 1rem;
+}
+
+.footer {
+  grid-area: footer;
+  background: #eaeaea;
+  padding: 1rem;
 }
