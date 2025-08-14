@@ -323,7 +323,7 @@ main a:active  { color:#0A66C2; }
 
 /* Kompakter Slider in 400×300 */
 .slider--400{
-  max-width: 440px;          /* 400 Bild + etwas Padding/Border */
+  max-width: 440px;          
   margin: 1rem auto;
   padding: .75rem;
 }
@@ -331,7 +331,7 @@ main a:active  { color:#0A66C2; }
 .slider--400 .slide img{
   display:block;
   width: 400px;
-  height: 300px;             /* exakt 4:3 */
+  height: 300px;             
   object-fit: cover;
   border-radius: 12px;
   margin: 0 auto;
