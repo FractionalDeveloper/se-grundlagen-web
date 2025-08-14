@@ -1,5 +1,12 @@
-body{text-align: center; background-color:black; color:lightgray;}
-a:link {color: greenyellow}
-a:visited {color: red;}
-a:hover  {color: orange;}
+* {font-family: 'Courier New', Courier, monospace; text-align: center; background-color:black; color:lightgray;}
+h1 {font-size:xx-large; letter-spacing: 3px;}
+h2 {letter-spacing: 3px;}
+
+.navi {font-size: smaller; letter-spacing: 3px;}
+.highlight {font-style: italic; letter-spacing: 3px; font-weight: bold; border: 5px solid greenyellow;}
+.bild {border: 5px solid greenyellow; box-shadow: 5px 5px 10px green}
+
+a:link {color: green}
+a:visited {color: green;}
+a:hover  {color: greenyellow;}
 a:active {color: white;}
