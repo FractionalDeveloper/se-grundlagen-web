@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vergleich von CSS Grid und Flexbox Layout-Techniken"
+    />
+    <title>Layout Test - Grid vs Flexbox</title>
+    <link rel="stylesheet" href="./meine-styles.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Grid Layout für die ganze Seite -->
+      <div class="grid-layout">
+        <header class="header-grid header">
+          <nav>
+            <ul class="nav-seite">
+              <li class="nav-seite__item">
+                <a href="./index.html" class="nav-seite__link">Startseite</a>
+              </li>
+              <li class="nav-seite__item">
+                <a href="./ueber-mich.html" class="nav-seite__link"
+                  >Über mich</a
+                >
+              </li>
+              <li class="nav-seite__item">
+                <a href="./projekte.html" class="nav-seite__link"
+                  >Meine Projekte</a
+                >
+              </li>
+              <li class="nav-seite__item">
+                <a href="./box-model.html" class="nav-seite__link"
+                  >Box-Model Übung</a
+                >
+              </li>
+              <li class="nav-seite__item">
+                <a href="#" class="nav-seite__link">Layout Test</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <aside class="sidebar-grid">
+          <h2>Flexbox</h2>
+          <ul class="sidebar-beschreibung">
+            <li>1-dimensional (entweder Reihe oder Spalte)</li>
+            <li>Elemente passen sich dynamisch an Inhalt an</li>
+            <li>Gut für Navigationen, Buttons, einzelne Zeilen/Spalten</li>
+            <li>Einfach, wenn die Anordnung nur in einer Achse wichtig ist</li>
+            <li>Einfacher zu lernen, weniger Code nötig</li>
+          </ul>
+          <h2>Grid</h2>
+          <ul class="sidebar-beschreibung">
+            <li>2-dimensional (Reihen und Spalten gleichzeitig)</li>
+            <li>Präzise Kontrolle über Layout (Größe, Position, Abstände)</li>
+            <li>Gut für komplexe Layouts, ganze Seiten oder Karten</li>
+            <li>Kann überlappende Elemente steuern</li>
+            <li>Etwas komplexer, aber mächtiger für Layout-Strukturen</li>
+          </ul>
+        </aside>
+        <main class="content-grid">
+          <h1 class="content-grid__ueberschrift">
+            Eine große Überschrift "Meine Layout-Experimente
+          </h1>
+          <section class="flex-karten">
+            <div class="flex-karten__item"><p>Grün</p></div>
+            <div class="flex-karten__item"><p>Gelb</p></div>
+            <div class="flex-karten__item"><p>Rot</p></div>
+          </section>
+        </main>
+        <footer class="footer-grid">
+          <p style="text-align: center">
+            <span>&#169;</span> Denys Strashniuk - <span id="datum"></span>
+          </p>
+        </footer>
+      </div>
+    </main>
+    <script>
+      let datum = document.querySelector("#datum");
+      datum.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

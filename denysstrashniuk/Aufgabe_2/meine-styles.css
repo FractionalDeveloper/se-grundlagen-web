@@ -39,14 +39,15 @@ p {
 }
 .header {
   padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav-seite {
   display: flex;
+  gap: 15px;
 
   list-style: none;
-}
-.nav-seite__item:not(last-child) {
-  margin-right: 15px;
 }
 .nav-seite__link {
   display: block;
@@ -56,7 +57,7 @@ p {
   color: #000;
   text-decoration: none;
 
-  transition: background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .nav-seite__link:hover {
   background-color: rgb(163, 206, 235);
@@ -318,4 +319,68 @@ p {
   font-style: italic;
   text-align: center;
   border-left: 2px solid #b80000;
+}
+.grid-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+.header-grid {
+  grid-area: header;
+}
+.sidebar-grid {
+  grid-area: sidebar;
+  padding-left: 20px;
+}
+.content-grid {
+  padding-top: 50px;
+  grid-area: content;
+}
+.footer-grid {
+  grid-area: footer;
+}
+.content-grid__ueberschrift {
+  text-align: center;
+}
+.flex-karten {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.flex-karten__item {
+  justify-items: center;
+  align-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+
+  animation: karteTransform 2000ms cubic-bezier(0.445, 0.05, 0.55, 0.95)
+    alternate infinite;
+}
+.flex-karten__item:first-child {
+  background-color: #3ceb68;
+}
+.flex-karten__item:nth-child(2) {
+  background-color: #d0eb3c;
+}
+.flex-karten__item:last-child {
+  background-color: #eb1717;
+}
+@keyframes karteTransform {
+  0% {
+    border-radius: 0;
+  }
+  100% {
+    border-radius: 100%;
+  }
+}
+.sidebar-beschreibung {
+  list-style-type: circle;
+  font-size: 12px;
 }
