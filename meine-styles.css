@@ -1,0 +1,28 @@
+*{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+h1{
+    font-family: Georgia;
+    color: blue;
+}
+
+h2{
+    font-family:'Courier New';
+    color: blue;
+}
+
+h3{
+    font-family:'Lucida Sans';
+    color: black;
+}
+
+#überschrift{
+    font-size: 16px;
+    color: green;
+}
+
+.updates{
+    font-weight: bold;
+    color: red;
+}
