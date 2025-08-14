@@ -94,6 +94,29 @@ p {
   text-decoration: underline;
   color: #ff4343;
 }
+.zitat {
+  font-style: italic;
+  text-align: center;
+  cursor: pointer;
+}
+
+.zitat::before {
+  content: "\201C";
+}
+.zitat::after {
+  content: "\201D";
+}
+.zitat::before,
+.zitat::after {
+  color: #a7a7a7;
+  font-size: 30px;
+  font-weight: 700;
+}
+.zitat:hover::before,
+.zitat:hover::after {
+  color: #fc4747;
+}
+
 .hero-uebermich {
   overflow: hidden;
 
