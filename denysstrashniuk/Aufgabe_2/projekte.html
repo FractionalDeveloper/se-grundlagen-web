@@ -32,16 +32,8 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Meine Projekte</h1>
-        <img
-          src="https://picsum.photos/400/300"
-          alt="zufällige Bild"
-          title="zufälige Bild"
-          width="200"
-          height="200"
-          class="bild"
-        />
+      <section class="hero-projekte">
+        <h1 class="hero-projekte__ueberschrift">Meine Projekte</h1>
       </section>
       <section>
         <h2>Aktuelle Lernprojekte</h2>
@@ -50,11 +42,12 @@
             <a
               href="https://github.com/lordponchik/goit-markup-hw-08"
               target="_blank"
+              class="projekte__link"
             >
               <img
                 src="./bilder/projekte/webstudio.jpg"
                 alt="webstudio"
-                width="150"
+                width="250"
                 loading="lazy"
                 class="bild"
               />WebStudio</a
@@ -64,22 +57,27 @@
             <a
               href="https://lordponchik.github.io/team-tear_ice-cream/"
               target="_blank"
+              class="projekte__link"
             >
               <img
                 src="./bilder/projekte/icecream.jpg"
                 alt="icecream"
-                width="150"
+                width="250"
                 loading="lazy"
                 class="bild"
               />IceCream</a
             >
           </li>
           <li class="projekte__item">
-            <a href="https://lordponchik.github.io/my-book/" target="_blank">
+            <a
+              href="https://lordponchik.github.io/my-book/"
+              target="_blank"
+              class="projekte__link"
+            >
               <img
                 src="./bilder/projekte/mybook.jpg"
                 alt="mybook"
-                width="150"
+                width="250"
                 loading="lazy"
                 class="bild"
               />MyBook</a
@@ -87,29 +85,39 @@
           </li>
         </ol>
       </section>
-      <section>
+      <section class="geplant">
         <h2>Geplante Projekte"</h2>
-        <ul>
-          <li>Web-Nachrichten</li>
-          <li>To-Do Liste</li>
-          <li>Konsolen-Spiel</li>
-          <li>Web-Laden</li>
-          <li>Buchverwaltung</li>
+        <ul class="geplant-liste">
+          <li class="geplant-liste__item">Web-Nachrichten</li>
+          <li class="geplant-liste__item">To-Do Liste</li>
+          <li class="geplant-liste__item">Konsolen-Spiel</li>
+          <li class="geplant-liste__item">Web-Laden</li>
+          <li class="geplant-liste__item">Buchverwaltung</li>
         </ul>
       </section>
-      <section>
+      <section class="kontakt">
         <h2>Kontakt</h2>
-        <p>
-          E-Mail:
-          <a href="mailto:dstrashniuk@gmail.com">dstrashniuk@gmail.com</a>
+        <p class="email">
+          <span class="email__titel">E-Mail:</span>
+          <a href="mailto:meineemailadresse@gmail.com" class="email__adresse"
+            >meineemailadresse@gmail.com</a
+          >
         </p>
         <p>Sozialnetzwerke:</p>
-        <ul>
-          <li>
-            <a href="https://github.com/lordponchik" target="_blank">GitHub</a>
+        <ul class="sozialnetzwerke-liste">
+          <li class="sozialnetzwerke-liste__item">
+            <a
+              href="https://github.com/lordponchik"
+              target="_blank"
+              class="sozialnetzwerke-liste__link"
+              >GitHub</a
+            >
           </li>
-          <li>
-            <a href="www.linkedin.com/in/denys-strashniuk" target="_blank"
+          <li class="sozialnetzwerke-liste__item">
+            <a
+              href="www.linkedin.com/in/denys-strashniuk"
+              target="_blank"
+              class="sozialnetzwerke-liste__link"
               >Linkedin</a
             >
           </li>

@@ -11,8 +11,8 @@ body {
   font-family: Arial, sans-serif;
 }
 section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 h1 {
   font-family: "Times New Roman", serif;
@@ -138,17 +138,89 @@ p {
   text-align: center;
   border: 1px solid #ccc;
 }
+.hero-projekte {
+  position: relative;
+
+  height: 500px;
+
+  background-image: url(https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-projekte__ueberschrift {
+  position: absolute;
+  font-size: 55px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+}
+.projekte {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 .projekte__item {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: calc(100% / 3);
+
   border: 1px solid #ccc;
 }
 .projekte__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.projekte__link {
+  margin: 0 auto;
+
+  transition: background-color 250ms linear;
+}
+.projekte__link > img {
+  display: block;
+  height: 140px;
+}
+.projekte__link:hover {
+  background-color: #81ffee;
 }
 .projekte__item > a {
   text-decoration: none;
   text-align: center;
   color: #000;
+}
+.geplant-liste {
+  width: 300px;
+  margin: 0 auto;
+
+  list-style: none;
+  text-align: center;
+}
+.geplant-liste__item::before {
+  content: "-";
+  margin-right: 10px;
+
+  font-size: 20px;
+  font-weight: 900;
+  color: #ff4343;
+}
+.kontakt {
+  width: 400px;
+  margin: 0 auto 10px;
+
+  text-align: center;
+  border: 1px dashed #858585;
+}
+.email__adresse,
+.sozialnetzwerke-liste__link {
+  color: #000;
+}
+.email__adresse:hover,
+.sozialnetzwerke-liste__link:hover {
+  color: #2282ff;
+}
+.sozialnetzwerke-liste {
+  list-style: none;
+}
+.email__adresse:visited,
+.sozialnetzwerke-liste__link:visited {
+  color: #3c8b32;
 }
