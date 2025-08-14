@@ -13,10 +13,10 @@
       content="Portfolio, Über mich, Denys Strashniuk, Persönliche Website"
     />
     <title>Willkommen - Denys Strashniuk</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="meine-styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
         <ul class="nav-seite">
           <li class="nav-seite__item">
@@ -32,42 +32,41 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Willkomen auf meiner Webseite</h1>
-        <img
-          src="./bilder/bild_1.jpg"
-          alt="Weg"
-          title="Weg"
-          width="400"
-          height="300"
-        />
-        <p>
-          Schön, dass du hier bist. Diese Seite ist mein kleiner digitaler
-          Arbeits- und Ideenraum – ein Ort, an dem ich meine Projekte,
-          Erfahrungen und Interessen teile.
-        </p>
-        <p>
-          Du findest hier Einblicke in meine Arbeit als Entwickler, Notizen zu
-          spannenden Themen aus der IT-Welt, nützliche Ressourcen zum Lernen
-          sowie kleine Experimente und Projekte, an denen ich aktuell arbeite.
-          Egal, ob du Inspiration suchst, etwas Neues lernen möchtest oder
-          einfach neugierig bist – hier gibt es immer etwas zu entdecken.
-        </p>
+      <section class="hero">
+        <div class="hero__container">
+          <h1 id="hauptueberschrift">Willkomen auf meiner Webseite</h1>
+          <p>
+            Schön, dass du hier bist. Diese Seite ist mein kleiner digitaler
+            Arbeits- und Ideenraum – ein Ort, an dem ich meine Projekte,
+            Erfahrungen und Interessen teile.
+          </p>
+          <p>
+            Du findest hier Einblicke in meine Arbeit als Entwickler, Notizen zu
+            spannenden Themen aus der IT-Welt, nützliche Ressourcen zum Lernen
+            sowie kleine Experimente und Projekte, an denen ich aktuell arbeite.
+            Egal, ob du Inspiration suchst, etwas Neues lernen möchtest oder
+            einfach neugierig bist – hier gibt es immer etwas zu entdecken.
+          </p>
+        </div>
       </section>
-      <section>
-        <h2>Neueste Updates</h2>
-        <ul>
-          <li>
-            Ich lerne gerade C# und vertiefe mein Wissen in
+      <section class="updates">
+        <h2 class="updates__ueberschrift">Neueste Updates</h2>
+        <ul class="updates-liste">
+          <li class="updates-liste__item">
+            Ich <span>lerne</span> gerade C# und vertiefe mein Wissen in
             Frontend-Entwicklung.
           </li>
-          <li>
-            Ich arbeite an kleinen Programmierprojekten und Spiele-Mechaniken.
+          <li class="updates-liste__item">
+            Ich <span>arbeite</span> an kleinen Programmierprojekten und
+            Spiele-Mechaniken.
           </li>
-          <li>
-            Ich verbessere meine Sprachkenntnisse in Deutsch und Englisch.
+          <li class="updates-liste__item">
+            Ich <span>verbessere</span> meine Sprachkenntnisse in Deutsch und
+            Englisch.
           </li>
-          <li>Ich teile hier meine Fortschritte und neue Ideen.</li>
+          <li class="updates-liste__item">
+            Ich <span>teile</span> hier meine Fortschritte und neue Ideen.
+          </li>
         </ul>
       </section>
     </main>
