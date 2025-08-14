@@ -31,6 +31,7 @@ img:hover {
 .hauptnavigation {
     color: brown;
     font-size: 20px;
+    padding-left: 5%;
 }
 .highlight {
     font-style: italic;
@@ -69,6 +70,7 @@ blockquote {
     background-color: aquamarine;
     text-align: center;
     color: darkviolet;
+    border-left: 5px solid coral;
 }
 button
 {
@@ -83,4 +85,22 @@ button:hover
 {
     background-color: coral;
     color: white;
+}
+.hover-bild {
+    border: 8px solid transparent;
+    padding: 10px;
+}
+.hover-bild:hover {
+    border-color: firebrick;
+    border-style: solid;
+    border-radius: 10px;
+}
+.hauptueberschrift {
+    margin-bottom: 5%;
+}
+a {
+    margin-right: 5%;
+}
+main {
+    margin-left: 1%;
 }
